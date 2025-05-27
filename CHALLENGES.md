@@ -1,15 +1,57 @@
 Your task is to understand the codebase and complete the tasks.
 
-Some guidelines:
+**Getting Started with the Challenge**
 
-0. Fork the repository (Make it private, add `rohitshetty` (username on github), `sachinbat` (username on github) so we can access, once you are ready). Checkout [README.md](./README.md) for details on how to run it locally.
-1. Solve the Known issues below
-2. Implement Feature requests
-3. Commit frequently, wherever needed, as per best practices. Git messages should be crisp and explain the intent.
-4. Push the code to your private repository (Don't make it public)
-5. Send us your details, along with link to your repo, and a loom link (recording your face is not required, however is good practice for code walkthroughs), explaining your understanding of the codebase. Walk us through your understanding of the bug fixes, and feature requests one by one.
+**Step 1: Repository Setup**
 
-## 🐞 Known Issues (To Be Fixed)
+1. Fork this repository to your GitHub account
+2. Make your forked repository **private**
+3. Add the following collaborators to your private repository, only after you are ready to share the solution with us:
+   - GitHub username: `rohitshetty`
+   - GitHub username: `sachinbat`
+4. Clone your forked repository locally
+5. Follow the setup instructions in `README.md` to get the project running on your machine
+
+**Step 2: Work on the Challenges**
+
+1. **Fix Known Issues**
+
+   - Address all 4 bug reports in order
+   - Document your findings and solutions for each fix
+   - Test thoroughly to ensure the fixes work as expected
+
+2. **Implement New Features**
+   - Build the "Favorite Notes" feature
+   - Write up a detailed technical design for the "Comprehensive Search" feature
+
+**Step 3: Code Quality & Version Control**
+
+- Make frequent, meaningful commits
+- Each commit message should:
+  - Be clear and concise
+  - Explain the purpose of the changes
+  - Follow git commit message best practices
+- Keep commits focused and atomic (one logical change per commit)
+
+**Step 4: Submission**
+
+1. Ensure all your code is pushed to your private repository
+2. Record a walkthrough video (using Loom):
+   - Explain your understanding of the codebase
+   - Walk through each bug fix you implemented
+   - Demonstrate the new features you added
+   - Showing your face is optional but recommended for better communication
+   - Keep it concise but thorough
+
+**Step 5: Final Submission**
+
+Send an email with:
+
+1. Link to your private GitHub repository (don't forget to add us to the repo with view access)
+2. Link to your Loom walkthrough video
+3. Any additional notes or documentation you think would be helpful
+
+## Known Issues (To Be Fixed)
 
 ### 1. User Feedback Bug Report
 
@@ -17,13 +59,13 @@ We've received some user complaints that their notes aren't all showing up - for
 
 It's unclear whether this is a backend or frontend issue (or both), so you'll need to dig into it and identify the root cause.
 
-Once you’ve fixed the problem, take a pass at improving the overall usability of that page - it currently feels confusing.
+Once you've fixed the problem, take a pass at improving the overall usability of that page - it currently feels confusing.
 
 ### 2. UI Glitch After Note Creation
 
-There’s a weird behavior happening with the "Create Note" button. After a user creates a note and then immediately tries to create another one, the new note form seems to blink or disappear almost instantly - like it opens and closes right away.
+There's a weird behavior happening with the "Create Note" button. After a user creates a note and then immediately tries to create another one, the new note form seems to blink or disappear almost instantly - like it opens and closes right away.
 
-This isn’t consistent with how it should work. You should be able to create multiple notes one after the other without having to reload the page or jump through hoops.
+This isn't consistent with how it should work. You should be able to create multiple notes one after the other without having to reload the page or jump through hoops.
 
 Look into what might be causing this - is it a timing thing? State not resetting? Something with focus or rendering?
 
@@ -31,15 +73,15 @@ Fix it so that the flow feels smooth and users can create notes continuously wit
 
 ### 3. Wrong Timestamp on New Notes
 
-A few users noticed something odd: when they create a note, the timestamp shown on the card says “Yesterday” - even though they just made it.
+A few users noticed something odd: when they create a note, the timestamp shown on the card says "Yesterday" - even though they just made it.
 
-That’s definitely not expected. The note was created today, so it shouldn’t be labeled as “Yesterday.”
+That's definitely not expected. The note was created today, so it shouldn't be labeled as "Yesterday."
 
-Can you figure out what’s going wrong here and fix it? It could be a timezone thing, or maybe some formatting issue. Once it's fixed, double-check that newly created notes reflect the correct relative time (e.g., “Just now”, “5 minutes ago”, etc.).
+Can you figure out what's going wrong here and fix it? It could be a timezone thing, or maybe some formatting issue. Once it's fixed, double-check that newly created notes reflect the correct relative time (e.g., "Just now", "5 minutes ago", etc.).
 
-### 4. We’ve received a heads-up that there might be a security vulnerability (or unintended access path) in how the note detail view is implemented.
+### 4. We've received a heads-up that there might be a security vulnerability (or unintended access path) in how the note detail view is implemented.
 
-There aren't any specific repro steps, but the concern is that users might be able to view or access notes they shouldn’t be able to - for example, by manipulating the URL or API calls.
+There aren't any specific repro steps, but the concern is that users might be able to view or access notes they shouldn't be able to - for example, by manipulating the URL or API calls.
 
 Your task:
 Investigate how note access control is currently handled.
@@ -67,7 +109,7 @@ Make assumptions, if any missing details, and document that in your response.
 
 Let's say we wanted to create a search notes feature - something that feels fast, accurate, and helpful even for users with thousands of notes.
 
-If we were to build a comprehensive search experience, how would you approach it? Don’t worry about writing code - instead, walk us through how you’d design the feature end-to-end (both from a product and technical perspective).
+If we were to build a comprehensive search experience, how would you approach it? Don't worry about writing code - instead, walk us through how you'd design the feature end-to-end (both from a product and technical perspective).
 
 Bonus: any ideas for making search feel smart or delightful for users?
 
