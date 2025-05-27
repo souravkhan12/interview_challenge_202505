@@ -2,12 +2,12 @@ Your task is to understand the codebase and complete the tasks.
 
 Some guidelines:
 
-0. Fork and clone the repository (Make it private)
+0. Fork the repository (Make it private, add `rohitshetty` (username on github), `sachinbat` (username on github) so we can access, once you are ready). Checkout [README.md](./README.md) for details on how to run it locally.
 1. Solve the Known issues below
 2. Implement Feature requests
-3. Commit frequently, wherever recommended, as per best practices. Git messages should be crisp and explain the intent.
-4. Push the code to a private repository (Don't make it public)
-5. Send us your details, along with link to this repo, and a loom link (recording your face is not required, however is good practice for code walkthroughs), explaining your understanding of the codebase. Walk us through your understanding of the bug fixes, and feature requests one by one.
+3. Commit frequently, wherever needed, as per best practices. Git messages should be crisp and explain the intent.
+4. Push the code to your private repository (Don't make it public)
+5. Send us your details, along with link to your repo, and a loom link (recording your face is not required, however is good practice for code walkthroughs), explaining your understanding of the codebase. Walk us through your understanding of the bug fixes, and feature requests one by one.
 
 ## 🐞 Known Issues (To Be Fixed)
 
