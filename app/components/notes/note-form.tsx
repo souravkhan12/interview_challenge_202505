@@ -5,6 +5,7 @@ import { Input } from "~/components/ui/input";
 import { Label } from "~/components/ui/label";
 import { Textarea } from "~/components/ui/textarea";
 import { type NoteForm } from "~/schemas/notes";
+import { action } from "~/routes/login";
 
 interface NoteFormProps {
   defaultValues?: Partial<NoteForm>;
@@ -25,6 +26,7 @@ export function NoteForm({ defaultValues = {}, onSuccess }: NoteFormProps) {
     if (actionData?.success) {
       formRef.current?.reset();
       onSuccess?.();
+      actionData.success = false;
     }
   }, [actionData?.success, onSuccess]);
 
