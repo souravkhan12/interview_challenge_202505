@@ -21,7 +21,8 @@ export function formatDate(date: Date | string): string {
 export function formatRelativeTime(date: Date | string): string {
   const dateObj = typeof date === "string" ? new Date(date) : date;
   const now = new Date();
-  const diffInSeconds = Math.floor((dateObj.getTime() - now.getTime()) / 1000);
+
+  const diffInSeconds = Math.floor((now.getTime() - dateObj.getTime()) / 1000);
   const diffInMinutes = Math.floor(diffInSeconds / 60);
   const diffInHours = Math.floor(diffInMinutes / 60);
   const diffInDays = Math.floor(diffInHours / 24);
@@ -41,6 +42,5 @@ export function formatRelativeTime(date: Date | string): string {
   if (Math.abs(diffInMinutes) > 0) {
     return RELATIVE_FORMATTER.format(diffInMinutes, "minute");
   }
-
   return "just now";
 }
